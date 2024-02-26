@@ -1,10 +1,21 @@
 name: VideoPlayer
-options: 
- bundleIdPrefix: com.state.VideoPlayer
+options:
+    bundleIdPrefix: com.state.VideoPlayer
+    deploymentTarget:
+        iOS: 13.0
 targets:
-  VideoPlayer:
-    type: application
-    platform: iOS
-    deploymentTarget: "17.0"
-    sources: 
-    - VideoPlayer
+    VideoPlayer:
+        info:
+            path: VideoPlayer/VideoPlayer/Info.plist
+        settings:
+            configs:
+                Debug:
+                    DEBUG_MODE: YES
+                Release:
+                    DEBUG_MODE: NO
+        type: application
+        platform: iOS
+        sources:
+            - path: VideoPlayer
+ 
+    
