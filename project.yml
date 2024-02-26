@@ -1,0 +1,10 @@
+name: VideoPlayer
+options: 
+ bundleIdPrefix: com.state.VideoPlayer
+targets:
+  VideoPlayer:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: 
+    - VideoPlayer
